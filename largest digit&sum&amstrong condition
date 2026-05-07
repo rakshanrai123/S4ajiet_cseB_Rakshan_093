@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+      Scanner z=new Scanner(System.in);
+      System.out.print("enter the number:");
+      int m=z.nextInt();
+      int n=m;
+      int lar=0,d,a=0,s=0;
+      while(n>0){
+        d=n%10;
+        s+=d;
+        a+=(int)(Math.pow(d,3));
+        if(d>lar){lar=d;}
+        n=n/10;
+       }
+      System.out.println("the largest digit in the number is: "+lar);
+      System.out.println("the sum of all the digits is: "+s);
+      if( a==m){
+        System.out.println("the number is a armstrong number ");}
+      else{
+        System.out.println("the number is NOT a armstrong number ");
+      }
+    }
+}
+  
