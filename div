@@ -1,0 +1,9 @@
+import java.util.*;
+public class div{
+public static void main(string[]args){
+   float a=20;
+   float b=4;
+    system.out.println("QOUTIENT:"+a/b);
+    system.out.println("REMAINDER"+a%b);
+}
+}
