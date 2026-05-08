@@ -1,0 +1,13 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+     Scanner k=new Scanner (System.in);
+     System.out.println("enter the string");
+     String str=k.nextLine();
+     String rev=new StringBuilder(str).reverse().toString();
+     System.out.println("reversed text is:"+rev);
+     if(rev.equals(str)){System.out.print("string is a palindrome");}
+     else{System.out.print("string is not a palindrome");}
+}
+}
