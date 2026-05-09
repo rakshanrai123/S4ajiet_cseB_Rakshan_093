@@ -1,0 +1,14 @@
+import java.util.HashSet;
+
+class Main {
+    public static void main(String[] args) {
+        String s = "anagram";
+        HashSet<Character> Chars= new HashSet<>();
+        
+        for (char c : s.toCharArray()) {
+            Chars.add(c);
+        }
+        
+        System.out.println("Unique character count: " +Chars.size());
+    }
+};
